@@ -43,10 +43,10 @@ const AmericaNorte = () => {
         gap={12}
         m="50px 30px"
         alignItems="center"
-        columns={[1, 3]}
+        columns={[2,3,4]}
       >
-        {paises.americadoNorte.map((p) => (
-          <GridItem m='0 auto' border='1px solid green' borderRadius='5px' w="10.5rem">
+        {paises.paisesExemplos.map((p,key) => (
+          <GridItem key={key} m='0 auto' border='1px solid green' borderRadius='5px' w="10.5rem">
             <Image src={p.imagem} />
             <Text fontSize='1rem' m='10px 0 0 10px' fontWeight="bold">{p.cidade}</Text>
             <Box paddingBottom='20px' display='flex'>
